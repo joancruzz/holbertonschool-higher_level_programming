@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for numbers in range(00, 100):
-   print('{:02d}'.format(numbers), end=', ')
+for number in range(99):
+    print('{:02d}'.format(number), end=', ')
+print(99)
