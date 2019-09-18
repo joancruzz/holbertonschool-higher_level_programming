@@ -4,5 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         for idx in list:
             print("{:d}".format(idx), end="")
             if idx != list[-1]:
-                print ("".format(), end=" ")
+                print("".format(), end=" ")
         print()
