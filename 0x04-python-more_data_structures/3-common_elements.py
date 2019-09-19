@@ -6,4 +6,3 @@ def common_elements(set_1, set_2):
             if x == y:
                 set_3.append(x)
     return (set_3)
-            
