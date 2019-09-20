@@ -4,11 +4,11 @@ def roman_to_int(roman_string):
     value = 0
     num = 0
     numeral = roman_string
-    if type(rom_string) is not str:
+    if type(roman_string) is not str:
         return 0
     if roman_string is None:
         return 0
-    for num in range (num, len(numeral)):
+    for num in range(num, len(numeral)):
         if num < len(numeral) - 1 and my_dict[numeral[num]] < my_dict[numeral[num + 1]]:
             value -= my_dict[numeral[num]]
         else:
