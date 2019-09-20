@@ -5,10 +5,10 @@ def roman_to_int(roman_string):
     num = 0
     numeral = rom_str
     if type(rom_str) is not str:
-        return None
+        return 0
     if rom_str is None:
-        return None
-    for num if range (num, len(numeral)):
+        return 0
+    for num in range (num, len(numeral)):
         if num < len(numeral) - 1 and my_dict[numeral[num]] < my_dict[numeral[num + 1]]:
             value -= my_dict[numeral[num]]
         else:
