@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 
+"""
+This is a Base module for base class
+"""
+
+
 import json
 from os import path
 

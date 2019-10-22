@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 
+"""
+This is a Base module  for Base Class
+"""
+
+
 from models.base import Base
 
 

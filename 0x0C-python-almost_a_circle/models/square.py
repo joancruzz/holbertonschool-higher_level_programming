@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 
+"""
+This is a Rectangle module for Rectangle class
+"""
+
+
 from models.rectangle import Rectangle
 
 
