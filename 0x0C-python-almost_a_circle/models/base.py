@@ -40,7 +40,7 @@ class Base:
             else:
                 my_list = []
                 f.write('{}'.format(my_list))
-        f.close() 
+        f.close()
 
     def from_json_string(json_string):
         """Return list of json string rep"""
