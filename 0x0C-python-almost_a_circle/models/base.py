@@ -39,7 +39,7 @@ class Base:
                                             for obj in list_objs]))
             else:
                 my_list = []
-                f.write('{}'.format(my_list))
+                """f.write('{}'.format(my_list))"""
 
     def from_json_string(json_string):
         """Return list of json string rep"""
