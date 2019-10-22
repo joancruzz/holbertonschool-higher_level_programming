@@ -38,8 +38,7 @@ class Base:
                 f.write(cls.to_json_string([obj.to_dictionary()
                                             for obj in list_objs]))
             else:
-                my_list = []
-                f.write(my_list)
+                f.write('[]')
 
     def from_json_string(json_string):
         """Return list of json string rep"""
