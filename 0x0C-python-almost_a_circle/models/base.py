@@ -41,10 +41,11 @@ class Base:
 
     def from_json_string(json_string):
         """Return list of json string rep"""
+        empty_list = []
         if json_string or json_string is not None:
             return json.loads(json_string)
         else:
-            return "[]"
+            return empty_list
 
     @classmethod
     def create(cls, **dictionary):
