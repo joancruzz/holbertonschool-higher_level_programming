@@ -58,7 +58,7 @@ class TestRectangle(unittest.TestCase):
         """Float parameter"""
         with self.assertRaises(TypeError):
             r1 = Rectangle(1, 1.2, 3, 4, 5)
-           
+
     def test_NaN(self):
         """NaN parameter"""
         with self.assertRaises(TypeError):
@@ -87,14 +87,14 @@ class TestRectangle(unittest.TestCase):
             r1 = Rectangle(1, -2)
         with self.assertRaises(ValueError):
             r1 = Rectangle(1, 2, 3, -4)
-                                              
-    def test_zero(self):      
+
+    def test_zero(self):
         """zero as a parameter"""
         with self.assertRaises(ValueError):
             r1 = Rectangle(0, 1)
         with self.assertRaises(ValueError):
             r1 = Rectangle(1, 0)
-               
+
     def test_area(self):
         """Prints the area"""
         r1 = Rectangle(2, 4)
