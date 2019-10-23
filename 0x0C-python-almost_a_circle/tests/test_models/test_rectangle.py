@@ -12,7 +12,7 @@ class TestRectangle(unittest.TestCase):
 
     def setUp(self):
         """Resets nb_objects"""
-        base._Base__nb_objects = 0
+        Base._Base__nb_objects = 0
 
     def test_id(self):
         """Prints id"""
@@ -149,7 +149,7 @@ class TestRectangle(unittest.TestCase):
         r1.update(89, 2, 3, 4, 5, 6, 7)
         print(r1)
         sys.stdout = sys.__stdout__
-        assert output.getvalue() == "[Rectangle] (89) 4/5 - 2/3\n"
+        output.getvalue() == "[Rectangle] (89) 4/5 - 2/3\n"
 
     def test_update_no_param(self):
         """Update with extra parameters"""
