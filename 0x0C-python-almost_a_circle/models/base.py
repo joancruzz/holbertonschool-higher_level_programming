@@ -63,11 +63,15 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """ Load a json string from a file and return dictionary """
+        empty_list = []
         try:
-            with open(cls.__name__ + ".json", 'r') as f:
-                pass
+            f = open(cls.__name__ + '.json')
+            f.close()
         except FileNotFoundError:
-            return []
-        with open(cls.__name__ + ".json", 'r') as fp:
-            load = cls.from_json_string(f.read())
-        return [cls.create(**d) for d in load]
+            return empty_list
+
+        with open(cls.__name__ + ".json", 'r') as f:
+            new_list = cls.from_json_string(f.read())
+        for i in new_list:
+            empty_list.append(cls.create(**i))
+        return empty_list
