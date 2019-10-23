@@ -99,7 +99,7 @@ class TestBase(unittest.TestCase):
 
     def test_to_json_string_empty(self):
         """to_json_string empty"""
-        son_dictionary = Base.to_json_string('')
+        json_dictionary = Base.to_json_string('')
         self.assertEqual(json_dictionary, '[]')
 
     def test_save_to_file_len(self):
