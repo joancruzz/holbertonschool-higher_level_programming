@@ -13,7 +13,8 @@ if __name__ == "__main__":
     if len(argv) == 2:
         arg = argv[1]
     try:
-        req = requests.get('https://swapi.co/api/people/?search={}'.format(arg))
+        req = requests.get('https://swapi.co/api/people/?search={}'
+                           .format(arg))
         js = req.json()
         if js:
             print('Number of results:', js['count'])
