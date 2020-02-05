@@ -6,5 +6,5 @@ if (x) {
     console.log('X'.repeat(x));
   }
 } else {
-    console.log('Missing size');
+  console.log('Missing size');
 }
