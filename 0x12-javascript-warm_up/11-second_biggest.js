@@ -3,6 +3,6 @@
 if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  const num_arr = process.argv.slice(2).sort((a, b) => a - b);
-  console.log(num_arr[num_arr.length - 2]);
+  const numArr = process.argv.slice(2).sort((a, b) => a - b);
+  console.log(numArr[numArr.length - 2]);
 }
